@@ -1,18 +1,14 @@
-get text
-var text = document.body.innerText
-
-split text
-text.split(' ')
-
-strip text
-text.replace(/(\r\n|\n|\r)/gm, "")
-
-search for terms
+Obtain Body Text
 ```javascript
-for (i = 0; i < split.length; i++) { 
-	if (split[i][0] == 'a') {
-		console.log(split[i])
-	}
-}
+var text = document.body.innerText
 ```
 
+Text Splitting
+```javascript
+text.split(' ')
+```
+
+Stripping Characters in regex
+```javascript
+text.replace(/(\r\n|\n|\r)/gm, "")
+```
